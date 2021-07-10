@@ -152,7 +152,7 @@ DemonFallcomingsoon.Text = "Demon Fall (coming soon)"
 DemonFallcomingsoon.TextColor3 = Color3.fromRGB(255, 255, 255)
 DemonFallcomingsoon.TextSize = 14.000
 DemonFallcomingsoon.MouseButton1Down:connect(function()
-	...
+	
 end)
 
 SuperSaiyanSimulator2.Name = "Super Saiyan Simulator 2"
