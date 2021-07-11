@@ -1,9 +1,9 @@
 local ScreenGui = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
+local main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local label = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
-local label1 = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
 local YourBizzareAdventure = Instance.new("TextButton")
 local BloxFruit = Instance.new("TextButton")
@@ -18,51 +18,51 @@ local SuperSaiyanSimulator2 = Instance.new("TextButton")
 
 ScreenGui.Parent = game.CoreGui
 
-
-Main.Name = "Main"
-Main.Parent = ScreenGui
-Main.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-Main.BorderColor3 = Color3.fromRGB(24, 24, 24)
-Main.Position = UDim2.new(0.0301974453, 0, 0.513289034, 0)
-Main.Size = UDim2.new(0, 308, 0, 235)
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+main.BorderColor3 = Color3.fromRGB(24, 24, 24)
+main.Position = UDim2.new(0.0301974453, 0, 0.4396694, 0)
+main.Size = UDim2.new(0, 399, 0, 295)
 main.Active = true
 main.Draggable = true
 
-UICorner.Parent = Main
+UICorner.Parent = main
 
-label.Name = "label"
-label.Parent = Main
-label.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
-label.BorderColor3 = Color3.fromRGB(13, 13, 13)
-label.Size = UDim2.new(0, 308, 0, 33)
-label.Font = Enum.Font.Ubuntu
-label.Text = "Friller"
-label.TextColor3 = Color3.fromRGB(255, 255, 255)
-label.TextSize = 20.000
-label.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+TextLabel.BorderColor3 = Color3.fromRGB(13, 13, 13)
+TextLabel.Size = UDim2.new(0, 399, 0, 42)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = " Friller"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_2.Parent = label
+UICorner_2.Parent = TextLabel
 
-label1.Name = "label1"
-label1.Parent = Main
-label1.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
-label1.BorderColor3 = Color3.fromRGB(13, 13, 13)
-label1.Position = UDim2.new(0, 0, 0.102850258, 0)
-label1.Size = UDim2.new(0, 308, 0, 18)
-label1.Font = Enum.Font.Ubuntu
-label1.Text = "Anime Script hub"
-label1.TextColor3 = Color3.fromRGB(255, 0, 0)
-label1.TextSize = 15.000
-label1.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_2.Parent = main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+TextLabel_2.BorderColor3 = Color3.fromRGB(13, 13, 13)
+TextLabel_2.Position = UDim2.new(0, 0, 0.108891651, 0)
+TextLabel_2.Size = UDim2.new(0, 399, 0, 22)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = " Anime Script hub"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_2.TextSize = 15.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_3.Parent = label1
+UICorner_3.Parent = TextLabel_2
 
 YourBizzareAdventure.Name = "Your Bizzare Adventure"
-YourBizzareAdventure.Parent = Main
+YourBizzareAdventure.Parent = main
 YourBizzareAdventure.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 YourBizzareAdventure.BorderColor3 = Color3.fromRGB(13, 13, 13)
-YourBizzareAdventure.Position = UDim2.new(0.0227272734, 0, 0.208510637, 0)
-YourBizzareAdventure.Size = UDim2.new(0, 143, 0, 39)
+YourBizzareAdventure.Position = UDim2.new(0.0227272771, 0, 0.213840574, 0)
+YourBizzareAdventure.Size = UDim2.new(0, 185, 0, 48)
+YourBizzareAdventure.ZIndex = 2
 YourBizzareAdventure.Font = Enum.Font.SourceSans
 YourBizzareAdventure.Text = "Your Bizzare Adventure"
 YourBizzareAdventure.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -72,11 +72,12 @@ YourBizzareAdventure.MouseButton1Down:connect(function()
 end)
 
 BloxFruit.Name = "Blox Fruit"
-BloxFruit.Parent = Main
+BloxFruit.Parent = main
 BloxFruit.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 BloxFruit.BorderColor3 = Color3.fromRGB(13, 13, 13)
-BloxFruit.Position = UDim2.new(0.509740233, 0, 0.208510637, 0)
-BloxFruit.Size = UDim2.new(0, 143, 0, 39)
+BloxFruit.Position = UDim2.new(0.509740233, 0, 0.213840574, 0)
+BloxFruit.Size = UDim2.new(0, 185, 0, 48)
+BloxFruit.ZIndex = 2
 BloxFruit.Font = Enum.Font.SourceSans
 BloxFruit.Text = "Blox Fruit"
 BloxFruit.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -86,25 +87,27 @@ BloxFruit.MouseButton1Down:connect(function()
 end)
 
 HerosUltimatum.Name = "Hero's Ultimatum"
-HerosUltimatum.Parent = Main
+HerosUltimatum.Parent = main
 HerosUltimatum.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 HerosUltimatum.BorderColor3 = Color3.fromRGB(13, 13, 13)
-HerosUltimatum.Position = UDim2.new(0.0227272734, 0, 0.400000006, 0)
-HerosUltimatum.Size = UDim2.new(0, 143, 0, 39)
+HerosUltimatum.Position = UDim2.new(0.0227272771, 0, 0.404040396, 0)
+HerosUltimatum.Size = UDim2.new(0, 185, 0, 48)
+HerosUltimatum.ZIndex = 2
 HerosUltimatum.Font = Enum.Font.SourceSans
-HerosUltimatum.Text = "Hero's Ultimatum"
+HerosUltimatum.Text = "My Hero Mania"
 HerosUltimatum.TextColor3 = Color3.fromRGB(255, 255, 255)
 HerosUltimatum.TextSize = 14.000
 HerosUltimatum.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/derekcool38/Releases/main/ScriptHub/Loader.lua"))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Solx69/Shit-Boy-Hub-Main/main/Master.lua'))();
 end)
 
 AnimeFighters.Name = "Anime Fighters"
-AnimeFighters.Parent = Main
+AnimeFighters.Parent = main
 AnimeFighters.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 AnimeFighters.BorderColor3 = Color3.fromRGB(13, 13, 13)
-AnimeFighters.Position = UDim2.new(0.509740233, 0, 0.400000006, 0)
-AnimeFighters.Size = UDim2.new(0, 143, 0, 39)
+AnimeFighters.Position = UDim2.new(0.509740233, 0, 0.404040396, 0)
+AnimeFighters.Size = UDim2.new(0, 185, 0, 48)
+AnimeFighters.ZIndex = 2
 AnimeFighters.Font = Enum.Font.SourceSans
 AnimeFighters.Text = "Anime Fighters"
 AnimeFighters.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -114,25 +117,27 @@ AnimeFighters.MouseButton1Down:connect(function()
 end)
 
 AnimeDimension.Name = "Anime Dimension"
-AnimeDimension.Parent = Main
+AnimeDimension.Parent = main
 AnimeDimension.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 AnimeDimension.BorderColor3 = Color3.fromRGB(13, 13, 13)
-AnimeDimension.Position = UDim2.new(0.0227272734, 0, 0.595744669, 0)
-AnimeDimension.Size = UDim2.new(0, 143, 0, 39)
+AnimeDimension.Position = UDim2.new(0.0227272771, 0, 0.598466992, 0)
+AnimeDimension.Size = UDim2.new(0, 185, 0, 48)
+AnimeDimension.ZIndex = 2
 AnimeDimension.Font = Enum.Font.SourceSans
 AnimeDimension.Text = "Anime Dimension"
 AnimeDimension.TextColor3 = Color3.fromRGB(255, 255, 255)
 AnimeDimension.TextSize = 14.000
 AnimeDimension.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/Testing/main/AnimeDimension"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CopyReal/NexHub/main/AD", true))()
 end)
 
 ShindoLife.Name = "Shindo Life"
-ShindoLife.Parent = Main
+ShindoLife.Parent = main
 ShindoLife.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 ShindoLife.BorderColor3 = Color3.fromRGB(13, 13, 13)
-ShindoLife.Position = UDim2.new(0.509740233, 0, 0.595744669, 0)
-ShindoLife.Size = UDim2.new(0, 143, 0, 39)
+ShindoLife.Position = UDim2.new(0.509740233, 0, 0.598466992, 0)
+ShindoLife.Size = UDim2.new(0, 185, 0, 48)
+ShindoLife.ZIndex = 2
 ShindoLife.Font = Enum.Font.SourceSans
 ShindoLife.Text = "Shindo Life"
 ShindoLife.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -142,25 +147,27 @@ ShindoLife.MouseButton1Down:connect(function()
 end)
 
 DemonFallcomingsoon.Name = "Demon Fall (coming soon)"
-DemonFallcomingsoon.Parent = Main
+DemonFallcomingsoon.Parent = main
 DemonFallcomingsoon.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 DemonFallcomingsoon.BorderColor3 = Color3.fromRGB(13, 13, 13)
-DemonFallcomingsoon.Position = UDim2.new(0.509740233, 0, 0.791489363, 0)
-DemonFallcomingsoon.Size = UDim2.new(0, 143, 0, 39)
+DemonFallcomingsoon.Position = UDim2.new(0.509740233, 0, 0.792893529, 0)
+DemonFallcomingsoon.Size = UDim2.new(0, 185, 0, 48)
+DemonFallcomingsoon.ZIndex = 2
 DemonFallcomingsoon.Font = Enum.Font.SourceSans
 DemonFallcomingsoon.Text = "Demon Fall (coming soon)"
 DemonFallcomingsoon.TextColor3 = Color3.fromRGB(255, 255, 255)
 DemonFallcomingsoon.TextSize = 14.000
 DemonFallcomingsoon.MouseButton1Down:connect(function()
-	
+	print("coming soon")
 end)
 
 SuperSaiyanSimulator2.Name = "Super Saiyan Simulator 2"
-SuperSaiyanSimulator2.Parent = Main
+SuperSaiyanSimulator2.Parent = main
 SuperSaiyanSimulator2.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 SuperSaiyanSimulator2.BorderColor3 = Color3.fromRGB(13, 13, 13)
-SuperSaiyanSimulator2.Position = UDim2.new(0.0227272734, 0, 0.791489363, 0)
-SuperSaiyanSimulator2.Size = UDim2.new(0, 143, 0, 39)
+SuperSaiyanSimulator2.Position = UDim2.new(0.0227272771, 0, 0.792893529, 0)
+SuperSaiyanSimulator2.Size = UDim2.new(0, 185, 0, 48)
+SuperSaiyanSimulator2.ZIndex = 2
 SuperSaiyanSimulator2.Font = Enum.Font.SourceSans
 SuperSaiyanSimulator2.Text = "Super Saiyan Simulator 2"
 SuperSaiyanSimulator2.TextColor3 = Color3.fromRGB(255, 255, 255)
