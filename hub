@@ -146,7 +146,7 @@ ShindoLife.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
 end)
 
-DemonFallcomingsoon.Name = "Demon Fall (coming soon)"
+DemonFallcomingsoon.Name = "Demon Fall"
 DemonFallcomingsoon.Parent = main
 DemonFallcomingsoon.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 DemonFallcomingsoon.BorderColor3 = Color3.fromRGB(13, 13, 13)
